@@ -53,5 +53,5 @@ While accessing the application, it will prompt for the Username/Password, then 
 Username/Password
 -----------------------
 
-admin/admin
-user/password
+    admin/admin
+    user/password
