@@ -1,0 +1,37 @@
+#######################################################
+# EMBEDDED SERVER CONFIGURATION (ServerProperties)
+#######################################################
+server.port: 8989
+server.session-timeout: 600
+server.context-path: /assessment
+server.servlet.context-path: /assessment
+
+spring.mvc.view.prefix: /
+spring.mvc.view.suffix: .html
+
+#######################################################
+# LOGGER CONFIGURATION
+#######################################################
+logging:
+   level:
+      root: INFO
+   path: ${user.home}/LOGS
+   file: assessment.log
+
+#######################################################       
+# EMBEDDED DERBY DATASOURCE CONFIGURATION
+#######################################################   
+spring:
+   datasource:
+      url: jdbc:derby:assessment;create=true
+      driver-class-name: org.apache.derby.jdbc.EmbeddedDriver
+      username: admin
+      password: 
+   jpa:
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.DerbyTenSevenDialect
+      hibernate:
+         ddl-auto: update
+      database-platform: org.hibernate.dialect.DerbyTenSevenDialect
+      generate-ddl: true   
