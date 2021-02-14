@@ -38,3 +38,20 @@ This application has been published as Docker Image to the hub as gurusamyramesh
 Docker compose for this application is available. It can be downloaded from here and run as like below.,
 
     > docker-compose -f assessment-compose.yaml  up
+
+# How to test
+
+Once the application is deployed, then Swagger or the REST Endpoints can be accessed with the below URL
+
+    > http://localhost:8989/assessment
+    > http://localhost:8989/assessment/swagger-ui.html
+    
+# Other Information
+
+While accessing the application, it will prompt for the Username/Password, then below credentials can be used.
+
+Username/Password
+-----------------------
+
+admin/admin
+user/password
