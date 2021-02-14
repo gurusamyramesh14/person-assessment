@@ -13,13 +13,13 @@ Following modules are used to build this Application.,
 
 # How to build
 
-This project sould be built using Apache Maven Build Tool. Check out the repostiroy, and run the below maven command to build this project 
+This project should be built using Apache Maven Build Tool. Check out the repostiroy, and run the below maven command to build this project 
 
     > mvn clean install
     
 Pre-built library can be downloaded from the target folder 
 
-     > assessment-1.0.0.jar
+    > assessment-1.0.0.jar
      
 # Docker
 
